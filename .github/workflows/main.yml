@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
 #clone docker and build image
 git clone https://github.com/hanxi/lede-docker-builder.git
-cd lede-docker-builder
+#cd lede-docker-builder
 docker build -t lede .
 #run container and clone lede code
 docker run --rm -it -v $(pwd)/../data:/workdir lede
